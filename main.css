@@ -1,0 +1,92 @@
+:root {
+  --light-gray: rgb(214, 226, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body {
+  background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  height: 500px;
+  max-width: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+}
+
+.qrImage {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.para-bold {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.para-thin {
+  font-weight: 400;
+  color: rgb(109, 109, 109);
+}
+
+.attribution {
+  margin-top: 40px;
+
+  text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: 700px;
+  }
+
+  .container {
+    margin: auto;
+    min-width: 325px;
+
+    /* padding: 10px; */
+  }
+
+  .qrImage {
+    min-width: 295px;
+    margin-bottom: 8px;
+  }
+
+  .para-bold {
+    padding: 3px;
+    font-size: 20px;
+  }
+
+  .para-thin {
+    font-size: 18px;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
+}
